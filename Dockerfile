@@ -1,8 +1,6 @@
 FROM couchdb:3.3.3
 
-RUN apt update && apt upgrade -y
-
-RUN apt install gnupg ca-certificates curl
+RUN apt update && apt install -y gnupg ca-certificates curl
 
 RUN curl -s https://repos.azul.com/azul-repo.key | gpg --dearmor -o /usr/share/keyrings/azul.gpg
 

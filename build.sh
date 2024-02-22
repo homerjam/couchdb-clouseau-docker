@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --no-cache -t zachlankton/couchdb-clouseau:3.3.3.1 .
+sudo docker build --no-cache -t homerjam/couchdb-clouseau .
